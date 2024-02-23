@@ -1,0 +1,47 @@
+table PowerBILogo
+	lineageTag: 81db38b1-dfff-471b-91f3-bb6057a85067
+
+	column Category
+		dataType: string
+		lineageTag: 19b84b7a-4b23-4c11-a8d7-a7cbbc3234a2
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column
+		dataType: string
+		lineageTag: 91763bcd-ca29-4f37-92bf-a0357c70c51d
+		summarizeBy: none
+		sourceColumn: Column
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: int64
+		formatString: 0
+		lineageTag: 941f0fc4-1391-4ff2-9618-722938f65ee6
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PowerBILogo = m
+		mode: import
+		source =
+				let
+				    Source = #table(
+				        type table [Category=text, Column=text, Value=Int64.Type],
+				        {
+				            {"Power BI", "A", 20},
+				            {"Power BI", "B", 30},
+				            {"Power BI", "C", 40}
+				        }
+				    )
+				in
+				    Source
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
