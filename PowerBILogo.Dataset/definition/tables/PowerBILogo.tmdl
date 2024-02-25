@@ -9,20 +9,20 @@ table PowerBILogo
 
 		annotation SummarizationSetBy = Automatic
 
-	column Column
-		dataType: string
-		lineageTag: 91763bcd-ca29-4f37-92bf-a0357c70c51d
-		summarizeBy: none
-		sourceColumn: Column
-
-		annotation SummarizationSetBy = Automatic
-
 	column Value
 		dataType: int64
 		formatString: 0
 		lineageTag: 941f0fc4-1391-4ff2-9618-722938f65ee6
 		summarizeBy: sum
 		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column
+		dataType: string
+		lineageTag: 91763bcd-ca29-4f37-92bf-a0357c70c51d
+		summarizeBy: none
+		sourceColumn: Column
 
 		annotation SummarizationSetBy = Automatic
 

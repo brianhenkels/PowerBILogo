@@ -6,3 +6,7 @@
 ### The Data
 
 ![PowerQuery](power_query.png)
+
+### TMDL
+
+![PowerQuery](tmdl.png)
