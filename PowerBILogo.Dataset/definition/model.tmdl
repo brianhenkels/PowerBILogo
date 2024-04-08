@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["PowerBILogo"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.126.927.0 (24.02)
+annotation PBIDesktopVersion = 2.127.1327.0 (24.03)
 
 annotation PBI_ProTooling = ["DevMode"]
 
