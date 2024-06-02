@@ -10,10 +10,12 @@ annotation PBI_QueryOrder = ["PowerBILogo"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.127.1327.0 (24.03)
+annotation PBIDesktopVersion = 2.129.905.0 (24.05)
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table PowerBILogo
 ref table DateTableTemplate_83b2f8ce-f1b0-4634-991b-83047c44d6b0
+
+ref cultureInfo pt-BR
 
